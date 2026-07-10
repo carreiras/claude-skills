@@ -1,8 +1,15 @@
 # 🧠 claude-skills
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub](https://img.shields.io/badge/GitHub-carreiras%2Fclaude--skills-blue?logo=github)](https://github.com/carreiras/claude-skills)
+[![Skills](https://img.shields.io/badge/Skills-8-green)]()
+[![Version](https://img.shields.io/badge/Version-v1.0-blue)]()
+
 **Biblioteca pessoal de Claude Skills** — segurança, conformidade regulatória brasileira e governança de produto para projetos SaaS.
 
 Desenvolvida por **Ewerton Carreira** para uso com [Claude Code](https://docs.claude.ai/code) e [Cowork](https://claude.ai/cowork).
+
+> 📦 **Status:** Todas as 8 skills estão prontas para uso | 🚀 **Última atualização:** Julho 2026
 
 ---
 
@@ -66,6 +73,13 @@ cp security-lgpd.skill ~/.claude/skills/
 ```bash
 git clone https://github.com/carreiras/claude-skills.git
 cd claude-skills
+```
+
+### Usar skills diretamente deste repositório
+
+```bash
+# No arquivo .claude/agents.md ou copilot-instructions.md do seu projeto:
+skills: https://github.com/carreiras/claude-skills
 ```
 
 ---
@@ -142,7 +156,6 @@ Cada skill opera com uma persona distinta, calibrada para o domínio:
 
 Skills planejadas para próximas versões:
 
-- [ ] `security-healthcare` — CFM, dados de saúde, prontuário eletrônico, telemedicina
 - [ ] `security-marco-civil-criancas` — Proteção de menores na internet, interseção com ECA e LGPD
 - [ ] `security-pci-brasil` — Contexto brasileiro: PIX, Open Finance, Elo, ABECS
 - [ ] `security-lgpd-frontend` — Banners de consentimento, cookies, opt-in/opt-out
@@ -150,14 +163,52 @@ Skills planejadas para próximas versões:
 
 ---
 
+## Contribuindo
+
+Encontrou um erro? Quer sugerir uma skill nova ou melhorar uma existente?
+
+1. **Issues:** Use [GitHub Issues](https://github.com/carreiras/claude-skills/issues) para reportar bugs ou sugerir features
+2. **Pull Requests:** Sinta-se à vontade para abrir PRs com melhorias nas referências
+3. **Discussões:** Ideias e questões gerais em [Discussions](https://github.com/carreiras/claude-skills/discussions)
+
+### Padrão de contribuição
+
+```bash
+git checkout -b feature/minha-skill
+# ...edite e teste...
+git commit -m "feat: adicionar skill security-xxx"
+git push origin feature/minha-skill
+```
+
+---
+
 ## Metadados
 
 ```yaml
 author: Ewerton Carreira
-version: v1
+version: v1.0
 language: pt-BR
 target: Claude Code / Cowork
+license: MIT
+repository: https://github.com/carreiras/claude-skills
 ```
+
+---
+
+## Suporte e Contato
+
+- 📧 **Email:** [Seu email]
+- 🐦 **Twitter:** [@ewerton_code](https://twitter.com/ewerton_code)
+- 💼 **LinkedIn:** [Ewerton Carreira](https://linkedin.com/in/ewerton-carreira)
+- 🐙 **GitHub:** [@carreiras](https://github.com/carreiras)
+
+---
+
+## Licença
+
+Este projeto está licenciado sob a **MIT License** — você pode usar, modificar e distribuir livremente, desde que inclua o aviso de copyright.
+
+Veja [LICENSE](./LICENSE) para detalhes.
 
 ---
 
